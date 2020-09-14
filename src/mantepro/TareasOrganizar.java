@@ -13,7 +13,6 @@ import java.util.Date;
 
 public abstract class TareasOrganizar {
     private final Calendar cal = Calendar.getInstance();
-    private String nombre;
     private boolean frecuencia;
     private Date fechaOriginal;
     private Date fechaF;
@@ -24,17 +23,7 @@ public abstract class TareasOrganizar {
     abstract void enivarNoti();
     
     abstract void calcularDias();
-    
-    
-    
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
+          
     public boolean isFrecuencia() {
         return frecuencia;
     }
@@ -60,7 +49,7 @@ public abstract class TareasOrganizar {
     public void setFechaF(Date fechaF) {
         this.fechaF = fechaF;
     }
-    
+
     
     
 }

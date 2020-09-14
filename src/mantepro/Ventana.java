@@ -18,8 +18,8 @@ public class Ventana extends TareasOrganizar{
     private int valVent;
     private String duenio;
     
-     public Ventana(String nombre,boolean frec,Date fechaOrigen){
-         super.setNombre(nombre);
+     public Ventana(boolean frec,Date fechaOrigen){
+        
          super.setFrecuencia(frec);
          super.setFechaOriginal(fechaOrigen);
      }
@@ -51,5 +51,14 @@ public class Ventana extends TareasOrganizar{
            this.valVent=1;
        }
     }
+
+    public int getValVent() {
+        return valVent;
+    }
+
+    public void setValVent(int valVent) {
+        this.valVent = valVent;
+    }
+        
     
 }

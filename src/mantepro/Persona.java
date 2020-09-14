@@ -5,6 +5,8 @@
  */
 package mantepro;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Daniel
@@ -14,9 +16,8 @@ public abstract class Persona {
     private String nombre;
     private int edad;
     private String formaComuni;
-    private Bici bici;
-    private Puertas puerta ;
-    private Ventana[] ventanas=new Ventana[2];
+    
+    ArrayList<TareasOrganizar> tareaslist = new ArrayList<TareasOrganizar>();
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -28,18 +29,6 @@ public abstract class Persona {
 
     public void setFormaComuni(String formaComuni) {
         this.formaComuni = formaComuni;
-    }
-
-    public void setBici(Bici bici) {
-        this.bici = bici;
-    }
-
-    public void setPuerta(Puertas puerta) {
-        this.puerta = puerta;
-    }
-
-    public void setVentanas(Ventana[] ventanas) {
-        this.ventanas = ventanas;
     }
 
     

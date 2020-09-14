@@ -19,8 +19,7 @@ public class Puertas extends TareasOrganizar{
      private int valVis1;
      private String duenio;
      
-     public Puertas(String nombre,boolean frec,Date fechaOrigen,String duenio){
-         super.setNombre(nombre);
+     public Puertas(boolean frec,Date fechaOrigen,String duenio){
          super.setFrecuencia(frec);
          super.setFechaOriginal(fechaOrigen);
          this.duenio=duenio;
@@ -50,7 +49,7 @@ public class Puertas extends TareasOrganizar{
         this.valVis1 = valVis1;
     }
 
-    
+    //56
     
     public int getValVis1() {
         return valVis1;
@@ -66,7 +65,7 @@ public class Puertas extends TareasOrganizar{
        }
     }
 
-  
     
+        
     
 }

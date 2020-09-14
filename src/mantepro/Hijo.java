@@ -11,13 +11,11 @@ package mantepro;
  */
 public class Hijo extends Persona {
     
-    public Hijo(String nombre,int edad,String formaComuni){
+    public Hijo(String nombre,int edad){
         super.setNombre(nombre);
         super.setEdad(edad);
-        super.setFormaComuni(formaComuni);
+       
     }
     
-    public void solicitarCambio(){
-        
-    }
+    
 }

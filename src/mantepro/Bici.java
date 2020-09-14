@@ -17,27 +17,41 @@ public class Bici extends TareasOrganizar{
     private int llanta1; 
      private String duenio;
     
-    public Bici(String nombre,boolean frec,Date fechaOrigen,boolean mountain,String duenio){
-         super.setNombre(nombre);
+    public Bici(boolean frec,Date fechaOrigen,String duenio){
+
          super.setFrecuencia(frec);
          super.setFechaOriginal(fechaOrigen);
          this.duenio=duenio;
      }
 
+    
+    
+    
     @Override
     void enivarNoti() {
        Calendar cal = Calendar.getInstance();
+        Calendar cal2 = Calendar.getInstance();
         Date origin = super.getFechaOriginal();
         cal.setTime(origin);
         cal.add(Calendar.MONTH, this.llanta1);
         Date final2 = cal.getTime();
+        Date final3 = cal2.getTime();
         String nombre = this.duenio;
-        while(origin.compareTo(final2)==-1){
-            JOptionPane.showMessageDialog(null, nombre+" tienes que lubricar bisagras de la puerta","MantePRO",1);
+        super.setFechaF(final2);
+        
+        while (final3.compareTo(final2)!=1){
+            JOptionPane.showMessageDialog(null, nombre+" tienes que lubricar las llantas","MantePRO",1);
+            System.out.println(final3+"\n"+final2);
             break;
         }
     }
 
+    public int getLlanta1() {
+        return llanta1;
+    }
+
+    
+    
     @Override
     void calcularDias() {
         if(super.isFrecuencia()){
