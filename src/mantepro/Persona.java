@@ -5,8 +5,6 @@
  */
 package mantepro;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Daniel
@@ -16,8 +14,9 @@ public abstract class Persona {
     private String nombre;
     private int edad;
     private String formaComuni;
-    
-    ArrayList<TareasOrganizar> tareaslist = new ArrayList<TareasOrganizar>();
+    private Bici bici;
+    private Puertas puerta ;
+    private Ventana[] ventanas=new Ventana[2];
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
